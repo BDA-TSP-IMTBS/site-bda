@@ -3,4 +3,4 @@
 
 Look for the images on https://www.pixabay.com
 
-Join me on my YouTube channel here https://www.youtube.com/c/CodingCity
+Join me on my YouTube channel here 
