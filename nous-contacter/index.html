@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BS8M7EH78B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BS8M7EH78B');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nous contacter</title>
+    <link rel="stylesheet" href="/nous-contacter/style.css" />
+    <link rel="stylesheet" href="/styles-navbar-footer.css" />
+    <link rel="icon" href="/images/Tache_BDA.png" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+    
+    <div id="navbar-container"></div>
+    <div class="container">
+      <img src="/nous-contacter/img/background.jpg" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Contactez-nous</h3>
+          <p class="text">
+            Vous avez une question quelconque ? N'hésitez surtout pas à nous contacter, on sera ravis de vous aider !
+          </p>
+
+          <div class="info">
+            <img src="/nous-contacter/img/illustration_contact.png">
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="/nous-contacter/send_mail.php" method="post" autocomplete="off">
+            <h3 class="title">Contactez-nous</h3>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Adresse mail</label>
+              <span>Adresse mail</span>
+            </div>
+            <div class="input-container textarea">
+              <input name="subject" class="input"/>
+              <label for="">Sujet</label>
+              <span>Sujet</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Envoyer" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="/nous-contacter/app.js"></script>
+    <script src="/include-footer.js"></script>
+    <script src="/include-navbar.js"></script>
+    <script src="/script-navbar-footer.js"></script>
+  </body>
+</html>

@@ -1,45 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles.css" />
-		<title>Page d'accueil</title>
-	</head>
-	<body>
-		<div class="container">
-			<nav>
-				<img src="images/wanen_white.png" alt="" class="logo" />
-				<ul>
-					<li><a href="#">Accueil</a></li>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-				<img src="images/cart.png" alt="" class="cart" />
-			</nav>
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BS8M7EH78B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-			<section class="site-container">
-				<p>Bienvenu à</p>
-				<h1>NDIKINIMEKI</h1>
-				<h4>EN APESANTEUR, VENEZ PROFITER DU CALME DE CHEZ NOUS...</h4>
+      gtag('config', 'G-BS8M7EH78B');
+    </script>
 
-				<div class="row">
-					<a href="#">Prendre un rendez-vous</a>
-					<a href="#">Voir les sites <span>&#x27f6</span></a>
-					<span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
-						Nemo impedit eaque odit quaerat ullam quidem?
-					</span>
-				</div>
-			</section>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles-navbar-footer.css" />
+    <link rel="icon" href="images/Tache_BDA.png" type="image/x-icon">
+    <title>BDA</title>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar-container"></div> <!-- L'élément pour inclure la navbar -->
 
-            <section class="social-icons">
-                <a href="#"><img src="images/github-fill.png" alt=""></a>
-                <a href="#"><img src="images/instagram-fill.png" alt=""></a>
-                <a href="#"><img src="images/telegram-fill.png" alt=""></a>
-                <a href="https://drive.google.com/file/d/1u2ZQxyamKsgJ4JxO-kYbytfxaaEkOT_a/view?usp=sharing" target="_blank"><img src="images/drive-fill.png" alt=""></a>
-            </section>
-		</div>
-	</body>
+        <section class="site-container">
+            <p>Bienvenue sur le site du</p>
+            <h1>Bureau Des Arts</h1>
+            <h4>de Télécom SudParis et IMT Business School </h4>
+            <div class="development-message">
+            </div>
+        </section>
+    </div>
+
+    <section class="news-section">
+        <div class="title-container">
+            <img src="/images/illustration_hot_news.png" alt="Hot News" class="title-image">
+            <div class="text-content">
+                <h1>À la une</h1>
+                <p>Découvrez les dernières actualités et événements à venir du BDA et des ses clubs dans cette section !</p>
+            </div>
+        </div>
+        <div id="scrolling-wrapper" class="scrolling-wrapper">
+            <div class="card" style="background-image: url('news/bda.jpg');">
+                <div class="card-content">
+                    <h2>Stand BDA</h2>
+                    <p>Venez découvrir le BDA sur nos stands du lundi 26 août au dimanche 1 septembre de 10h à 18h en <a href="https://promo2tel.fr/campus.html">grande salle</a> au foyer </p>
+                    <a href="/qui-sommes-nous/index.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/bbq.jpg');">
+                <div class="card-content">
+                    <h2>BBQ BDA & Ses Clubs</h2>
+                    <p>Le BDA vous propose de passer un moment convivial autour d'un BBQ le samedi 31 août à 20h en<a href="https://promo2tel.fr/campus.html">espace T</a></p>
+                    <a href="/qui-sommes-nous/index.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/journee-bda.jpg');">
+                <div class="card-content">
+                    <h2>Journée BDA SEI</h2>
+                    <p>Pendant la semaine d'intégration, le BDA vous propose plein d'activités le mardi 3 septembre à partir de 17h</p>
+                    <a href="/qui-sommes-nous/index.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/so.jpg');">
+                <div class="card-content">
+                    <h2>Scène Ouverte</h2>
+                    <p>Venez exposer vos talents lors de la première scène ouverte BDA le mardi 3 septembre à 22h en <a href="https://promo2tel.fr/campus.html">grande salle</a>!</p>
+                    <a href="/events/scene-ouverte.html" class="more-info-button" style="margin-bottom: 10px;">En savoir plus</a>
+                    <!--<a href="https://forms.gle/SWhBWwCJ2NSRQrjt5" class="more-info-button height: 25px">Inscrivez-vous</a>-->
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/bdasint.jpg');">
+                <div class="card-content">
+                    <h2>Soirée BDAsint</h2>
+                    <p>Le BDA et l'Asint vous propose une superbe soirée pour bien commencer l'année ! RDV jeudi 5 septembre à 22h !</p>
+                    <a href="/events/soirees.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/paint-it.jpg');">
+                <div class="card-content">
+                    <h2>Atelier Découverte Paint'IT</h2>
+                    <p>Paint'IT ouvre ses portes à tous.tes les intéressé.e.s par le dessin, la peinture ou l'art visuel en général ! RDV mardi 27 août à 16h au <a href="https://promo2tel.fr/campus.html">local Paint'IT (sous sol du foyer)</a> !</p>
+                    <a href="/clubs/paintit.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/cine-club.jpg');">
+                <div class="card-content">
+                    <h2>Diffusion Ciné Club</h2>
+                    <p>Flemme d'aller au cinéma ? Le cinéma viens chez vous ! RDV mecredi 28 août à 22h </p>
+                    <a href="/clubs/cineclub.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/cook-it.jpg');">
+                <div class="card-content">
+                    <h2>Atelier Cook'IT</h2>
+                    <p>Venez vous régaler en préparant et en mangeant lors de l'atelier Cook'IT le jeudi 29 août à 14h</p>
+                    <a href="/clubs/cookit.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/anim-int.jpg');">
+                <div class="card-content">
+                    <h2>Diffusion Anim'INT</h2>
+                    <p>Fan d'animé et de manga ? RDV vendredi 30 août à 22h pour la toute première séance</p>
+                    <a href="/clubs/animint.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/sing-int.jpg');">
+                <div class="card-content">
+                    <h2>Karaoké/Goûter Sing'INT/Emoty'S</h2>
+                    <p>Venez prendre un p'tit goûter et découvrir Sing'INT et Emoty'S samedi 31 août à 14h !</p>
+                    <a href="/clubs/index.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/declic.jpg');">
+                <div class="card-content">
+                    <h2>Shooting Déclic</h2>
+                    <p>Envie d'apprendre à prendre des belles photos et sutout être pris en photo super stylée ? RDV dimanche 1er septembre pour un shooting en extérieur !</p>
+                    <a href="/clubs/declic.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/stand.jpg');">
+                <div class="card-content">
+                    <h2>Journée des assos</h2>
+                    <p>Vous voulez découvrir plus en détail le BDA et ses clubs ? RDV jeudi 5 septembre à 14h pour la journée des assos !</p>
+                    <a href="/qui-sommes-nous/index.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('news/bbq-cook-it.jpg');">
+                <div class="card-content">
+                    <h2>Repas Cook'IT Epicer'INT Epicurieux</h2>
+                    <p>Avant le départ au WEI quoi de mieux qu'un bon repas ? Cook'IT vous propose ça le vendredi 6 septembre à 12h</p>
+                    <a href="/clubs/cookit.html" class="more-info-button">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="new-section">
+        <div class="content">
+            <img src="images/illustration_BDA.png" class="image animate left">
+            <div class="text-content animate right">
+                <h1>Le BDA qu'est-ce que c'est ? </h1>
+                <p>Le BDA, c'est une communauté de 40 membres unis par une passion commune : l'art. Chacun exprime cette passion à sa manière, qu'il s'agisse de musique, de danse, de peinture ou d'autres formes artistiques. Nous avons tout ! Alors, n'hésite plus et rejoins-nous ! </p>
+                <a href="/qui-sommes-nous/index.html" class="more-info-button">Présentation du BDA</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="new-section">
+        <div class="content">
+            <div class="text-content animate left">
+                <h1>18 clubs au sein du BDA&nbsp;!</h1>
+                <p>Le Bureau des Arts regroupe de nombreux clubs artistiques qui permettent à tous de s'épanouir dans la pratique ou dans la découverte d'un art: musique, danse, théâtre, cinéma, photo et j'en passe ! Il y en a pour tous les goûts et pour tous les niveaux.
+          Que vous soyez artistes en herbe, confirmés ou tout simplement spectateurs, vous êtes les bienvenus aux évènements du BDA qui accompagneront toutes vos années à l'INT ! </p>
+                <a href="/clubs/index.html" class="more-info-button">Présentation des clubs du BDA</a>
+            </div>
+            <img src="/images/illustration_clubs.png" class="image animate right">
+        </div>
+    </section>
+
+    <section class="new-section">
+        <div class="content">
+            <img src="/images/illustration_events.png" class="image animate left">
+            <div class="text-content animate right">
+                <h1>Le BDA est aussi un organisateur d'événements ! </h1>
+                <p>Le BDA organise des scènes ouvertes, sorties artistiques et bien d'autres encore. Le marché de Noël et le Festiv'ART (semaine de l'art) sont les évènements phares du BDA, ils permettent à tous de se retrouver dans une ambiance chaleureuse et accueillante! </p>
+                <a href="/events/index.html" class="more-info-button">Les événements du BDA</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="/include-navbar.js"></script> <!-- Inclusion du fichier JavaScript -->
+    <script src="/animations.js"></script> <!-- Inclusion du fichier JavaScript pour les animations -->
+    <script src="/include-footer.js"></script> <!-- Inclusion du fichier JavaScript -->
+    <script src="/script-navbar-footer.js"></script>
+</body>
 </html>
+
+
+
+<script>
+    const scrollingWrapper = document.getElementById('scrolling-wrapper');
+    scrollingWrapper.addEventListener('wheel', (evt) => {
+        evt.preventDefault();
+        scrollingWrapper.scrollLeft += evt.deltaY;
+    });
+</script>

@@ -1,0 +1,223 @@
+/* Styles généraux */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Tw Cen MT', sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.new-section {
+    background-color: #dddddd; /* Gris clair */
+    padding: 60px 20px;
+}
+
+.new-section .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.new-section .cotisation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.pricing-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.pricing-row.column {
+    width: 25%;  
+}
+
+.supplement-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.supplement-row.supplement {
+    width: 50%;  
+}
+
+.new-section .image {
+    max-width: 45%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.new-section .text-content {
+    max-width: 50%;
+}
+
+.new-section h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+}
+
+.new-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.column, .supplement {
+    text-align: center;
+    width: 45%;
+    max-width: 100%;
+}
+
+.img-fluid {
+    width: 75%;
+    max-width: 40vh;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.more-info-button {
+    align-items: center;
+    appearance: none;
+    background-color: #f00;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+    text-decoration: none;
+}
+
+.more-info-button:hover {
+  background: #eee;
+  color: #aaa;
+}
+
+.more-info-button:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.more-info-button:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.more-info-button:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.more-info-button:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.more-info-button:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.more-info-button:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 1px 0, rgba(60, 64, 67, .15) 0 8px 6px 4px;
+}
+
+
+.panda-left, .panda-right {
+    width: 20%;
+    transform: scaleX(1); /* This is for the left image */
+}
+
+.panda-right {
+    transform: scaleX(-1); /* This is for mirroring the right image */
+}
+
+.convinced-text {
+    margin: 0 10px;
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+.new-section .text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles responsives */
+@media (max-width: 768px) {
+    .new-section .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .new-section .image {
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .new-section .text-content {
+        max-width: 100%;
+    }
+
+    .new-section h1 {
+        font-size: 40px;
+    }
+
+    .news-section h1 {
+        font-size: 40px;
+    }
+
+    .title-container img {
+        margin-right: 10px; /* Ajustez l'espace entre l'image et le titre */
+        height: 100px; /* Ajustez la hauteur de l'image selon vos besoins */
+    }
+    .supplement-row {
+        flex-direction: column;
+    }
+
+    .supplement-row.supplement {
+        width: 100%;  
+    }
+    .column, .supplement {
+        width: 90%;
+    }
+}
