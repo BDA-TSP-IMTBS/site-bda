@@ -246,8 +246,7 @@ ul li:hover .dropdown {
 }
 
 @media (max-width:768px){
-
-    footer .box-container {
+    .footer .box-container {
         margin-bottom: 20px;
         margin-top: 30px;
         margin-left: 20px;
@@ -256,3 +255,5 @@ ul li:hover .dropdown {
         justify-content: space-around !important;
         flex-direction: column;
     }
+}
+
