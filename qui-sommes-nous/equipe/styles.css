@@ -1,0 +1,312 @@
+/* Styles généraux */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Tw Cen MT', sans-serif;
+}
+
+html {
+}
+
+.row a {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-right: 40px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.row a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.row a span {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2;
+    margin-left: 10px;
+}
+
+.row span {
+    font-size: 18px;
+}
+
+.social-icons {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.social-icons a {
+    padding: 5px;
+    margin-right: 4px;
+}
+
+.development-message {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.development-message .exclamation-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.development-message p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+/* Styles pour la nouvelle section */
+.new-section {
+    background-color: #dddddd; /* Gris clair */
+    padding: 2rem 9%;;
+}
+
+.new-section .content {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (max-width: 768px) {
+    .new-section .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .new-section .PPmandat {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .new-section .img {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .new-section .illustration {
+        max-width: 100%;
+        margin: 0 0 20px 0;
+        justify-content: center;
+    }
+    .new-section .text-content {
+        justify-content: center;
+    }
+    .new-section h1 {
+        font-size: 55px;
+    }
+}
+
+.new-section .PPmandat {
+    width: 400px;
+    height: auto;
+}
+
+.PPmandat img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    object-fit: cover;
+    object-position: center; 
+}
+
+
+.new-section .illustration {
+    width: 400px;
+    height: auto;
+}
+
+.illustration img{
+    height: 300px;
+    width: auto;
+}
+
+.new-section .text-content {
+    max-width: 75%;
+}
+
+.new-section h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+}
+
+.new-section h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    color: red;
+}
+
+.new-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.new-section .more-info-button {
+  align-items: center;
+  appearance: none;
+  background-color: #f00;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+  text-decoration: none;
+}
+
+.new-section .more-info-button:hover {
+  background: #eee;
+  color: #aaa;
+}
+
+.new-section .more-info-button:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.new-section .more-info-button:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.new-section .more-info-button:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.new-section .more-info-button:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.new-section .more-info-button:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.new-section .more-info-button:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.new-section .more-info-button:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+
+/* Initial hidden state */
+.hidden {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Animation styles */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate.left {
+    transform: translateX(-50px);
+}
+
+.animate.right {
+    transform: translateX(50px);
+}
+
+.animate.fadeInLeft {
+    animation: fadeInLeft 1s forwards;
+}
+
+.animate.fadeInRight {
+    animation: fadeInRight 1s forwards;
+}
+
+@
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Espace entre la phrase et le conteneur contact */
+    gap: 10px;
+    flex-direction: column;
+}
+
+.contact-text {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #000;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media-icons img {
+    width: 40px; /* Taille des icônes, ajustez selon vos besoins */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons a:hover img {
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
