@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <style type="text/css">
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      padding: 0;
+      outline: none;
+      font-family: 'Tw Cen MT', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      position: fixed; /* Fixed positioning for the nav */
+      top: 0;
+      left: 0;
+      right: 0;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 5px 0;
+      background-color: #222;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      z-index: 1000; /* Ensure it is above other content */
+    }
+
+    nav .logo {
+      width: 120px;
+      cursor: pointer;
+      margin-left: 50px;
+    }
+
+    nav .cart {
+      width: 40px;
+      cursor: pointer;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      padding-right: 40px;
+      text-align: right;
+      list-style-type: none;
+    }
+
+    ul li {
+      position: relative; /* For dropdown positioning */
+      margin-right: 10px;
+    }
+
+    ul li a {
+      position: relative;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      transform: translateX(-50%) translateY(-5px);
+      height: 3px;
+      background: #ffa400;
+      transition: 0.3s;
+    }
+
+    ul li a:hover::after {
+      width: 38%;
+    }
+
+    /* Styles for dropdown */
+    ul li .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #333;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1001; /* Ensure it is above other content */
+    }
+
+    ul li .dropdown li {
+      width: 200px;
+    }
+
+    ul li .dropdown li a {
+      padding: 10px;
+      color: #fff;
+      text-align: left;
+      font-size: 14px;
+      display: block;
+      white-space: nowrap;
+    }
+
+    ul li .dropdown li a:hover {
+      background-color: #575757;
+    }
+
+    ul li:hover .dropdown {
+      display: block;
+    }
+
+    /* Add margin-top to the body content to prevent it from being hidden by the navbar */
+    .content {
+      margin-top: 60px; /* Adjust this value based on the navbar height */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="../images/Logo_BDA.png" alt="" class="logo" />
+    <ul>
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="/qui-sommes-nous/index.html">Qui sommes-nous</a></li>
+      <li>
+        <a href="/events/index.html">Nos événements</a>
+        <ul class="dropdown">
+          <li><a href="/scenes_ouvertes">Les scènes ouvertes</a></li>
+          <li><a href="/scenes_ouvertes">Les scènes ouvertes</a></li>
+          <li><a href="/sorties_RA">Les sorties RA</a></li>
+          <li><a href="/we_danse">Le weekend de la danse</a></li>
+          <li><a href="/luminetsens">Le concours Lumin&Sens</a></li>
+          <li><a href="/marche_de_noel">Le marché de Noël </a></li>
+          <li><a href="/festivart">La semaine de l'art: Festiv'art</a></li>
+          <li><a href="/cabaret">Le cabaret</a></li>
+          <li><a href="/soirees">Les soirées</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="clubs/index.html">Nos clubs</a>
+        <ul class="dropdown">
+          <li><a href="/clubs/animint">Anim'INT</a></li>
+          <li><a href="/clubs/aparte">Aparté</a></li>
+          <li><a href="/clubs/bandamichel">La Band'à Michel</a></li>
+          <li><a href="/clubs/bellydance">Belly Dance</a></li>
+          <li><a href="/clubs/cineclub">Le ciné club</a></li>
+          <li><a href="/clubs/cj">Le club jeux</a></li>
+          <li><a href="/clubs/clubzik">Le club Zik</a></li>
+          <li><a href="/clubs/cookit">Cook'IT</a></li>
+          <li><a href="/clubs/declic">Déclic</a></li>
+          <li><a href="/clubs/emotys">Emoty'S</a></li>
+          <li><a href="/clubs/interlude">INTerlude</a></li>
+          <li><a href="/clubs/kcrew">KCrew</a></li>
+          <li><a href="/clubs/modelit">Model'IT</a></li>
+          <li><a href="/clubs/moovint">Moov'INT</a></li>
+          <li><a href="/clubs/paintit">Paint'IT</a></li>
+          <li><a href="/clubs/singint">Sing'INT</a></li>
+          <li><a href="/clubs/spades">Spades</a></li>
+          <li><a href="/clubs/ttt">Tell The Tale</a></li>
+        </ul>
+      </li>
+      <li><a href="../partenariats.html">Partenariats</a></li>
+      <li><a href="../nous-contacter/index.html">Nous contacter</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,164 @@
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      padding: 0;
+      outline: none;
+      font-family: 'Tw Cen MT', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      position: fixed; /* Fixed positioning for the nav */
+      top: 0;
+      left: 0;
+      right: 0;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 5px 0;
+      background-color: #222;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      z-index: 1000; /* Ensure it is above other content */
+    }
+
+    nav .logo {
+      width: 120px;
+      cursor: pointer;
+      margin-left: 50px;
+    }
+
+    nav .cart {
+      width: 40px;
+      cursor: pointer;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      padding-right: 40px;
+      text-align: right;
+      list-style-type: none;
+    }
+
+    ul li {
+      position: relative; /* For dropdown positioning */
+      margin-right: 10px;
+    }
+
+    ul li a {
+      position: relative;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      transform: translateX(-50%) translateY(-5px);
+      height: 3px;
+      background: #ffa400;
+      transition: 0.3s;
+    }
+
+    ul li a:hover::after {
+      width: 38%;
+    }
+
+    /* Styles for dropdown */
+    ul li .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #333;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1001; /* Ensure it is above other content */
+    }
+
+    ul li .dropdown li {
+      width: 200px;
+    }
+
+    ul li .dropdown li a {
+      padding: 10px;
+      color: #fff;
+      text-align: left;
+      font-size: 14px;
+      display: block;
+      white-space: nowrap;
+    }
+
+    ul li .dropdown li a:hover {
+      background-color: #575757;
+    }
+
+    ul li:hover .dropdown {
+      display: block;
+    }
+
+    /* Add margin-top to the body content to prevent it from being hidden by the navbar */
+    .content {
+      margin-top: 60px; /* Adjust this value based on the navbar height */
+      padding: 20px;
+    }
+
+.footer .box-container{
+    margin-top: 20px;
+    margin-left: 20px !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-around !important;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+    margin-right: 20px;
+}
+
+.footer .box-container .box h3{
+    color: #111;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-decoration: none;
+}
+
+
+.footer .box-container .box  a:hover{
+    color: #f00;
+    text-decoration: none;
+}
+
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+.footer .credit span{
+    color: var(--pink);
+}
+
