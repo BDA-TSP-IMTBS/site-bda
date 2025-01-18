@@ -1,0 +1,29 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to VM
+      env:
+        SSH_PRIVATE_KEY: ${{ b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAb3nm4TLPhPIZKRsWZovhPMSEkkJ0BvBW+TNO0IVwydwAAAKjIrz2xyK89
+sQAAAAtzc2gtZWQyNTUxOQAAACAb3nm4TLPhPIZKRsWZovhPMSEkkJ0BvBW+TNO0IVwydw
+AAAEADTDqxMKW5zgoaKqZlctGQ6RLlx8W2YejStykWE88MpRveebhMs+E8hkpGxZmi+E8x
+ISSQnQG8Fb5M07QhXDJ3AAAAH2l0aGFyLmthemVtQHRlbGVjb20tc3VkcGFyaXMuZXUBAg
+MEBQY= }}
+        VM_HOST: ${{157.159.195.26}}
+        VM_USER: ${{associationbda}}
+      run: |
+        echo "$SSH_PRIVATE_KEY" | ssh-add -
+        ssh -o StrictHostKeyChecking=no $VM_USER@$VM_HOST "mkdir -p /var/www/html/SiteBDA"
+        scp -r ./* $VM_USER@$VM_HOST:/var/www/html/SiteBDA
