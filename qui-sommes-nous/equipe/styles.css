@@ -310,3 +310,24 @@ html {
 .social-media-icons a:hover img {
     transform: scale(1.1); /* Effet de zoom au survol */
 }
+
+
+.equipe .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.equipe .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.equipe .box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform .3s ease;
+}

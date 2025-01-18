@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             document.getElementById("navbar-container").innerHTML = data;
             
-            // Maintenant que le navbar est inclus, nous pouvons ajouter les événements du menu burger
             addMenuBurgerFunctionality();
         });
 });
