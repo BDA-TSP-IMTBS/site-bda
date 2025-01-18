@@ -1,0 +1,41 @@
+[2024-12-18 19:10:07 +0100] [36084] [INFO] Starting gunicorn 23.0.0
+[2024-12-18 19:10:07 +0100] [36084] [INFO] Listening at: http://127.0.0.1:8000 (36084)
+[2024-12-18 19:10:07 +0100] [36084] [INFO] Using worker: sync
+[2024-12-18 19:10:07 +0100] [36085] [INFO] Booting worker with pid: 36085
+[2024-12-18 19:10:07 +0100] [36086] [INFO] Booting worker with pid: 36086
+[2024-12-18 19:10:07 +0100] [36087] [INFO] Booting worker with pid: 36087
+[2024-12-18 19:10:07 +0100] [36088] [INFO] Booting worker with pid: 36088
+[2024-12-18 19:13:10 +0100] [36205] [INFO] Starting gunicorn 23.0.0
+[2024-12-18 19:13:10 +0100] [36205] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2024-12-18 19:13:10 +0100] [36205] [ERROR] connection to ('127.0.0.1', 8000) failed: [Errno 98] Address already in use
+[2024-12-18 19:13:11 +0100] [36205] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2024-12-18 19:13:11 +0100] [36205] [ERROR] connection to ('127.0.0.1', 8000) failed: [Errno 98] Address already in use
+[2024-12-18 19:13:12 +0100] [36205] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2024-12-18 19:13:12 +0100] [36205] [ERROR] connection to ('127.0.0.1', 8000) failed: [Errno 98] Address already in use
+[2024-12-18 19:13:13 +0100] [36205] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2024-12-18 19:13:13 +0100] [36205] [ERROR] connection to ('127.0.0.1', 8000) failed: [Errno 98] Address already in use
+[2024-12-18 19:13:14 +0100] [36205] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2024-12-18 19:13:14 +0100] [36205] [ERROR] connection to ('127.0.0.1', 8000) failed: [Errno 98] Address already in use
+[2024-12-18 19:13:15 +0100] [36205] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2024-12-18 19:14:53 +0100] [36244] [INFO] Starting gunicorn 23.0.0
+[2024-12-18 19:14:53 +0100] [36244] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2024-12-18 19:14:53 +0100] [36244] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2024-12-18 19:14:54 +0100] [36244] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2024-12-18 19:14:54 +0100] [36244] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2024-12-18 19:14:55 +0100] [36244] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2024-12-18 19:14:55 +0100] [36244] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2024-12-18 19:14:56 +0100] [36244] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2024-12-18 19:14:56 +0100] [36244] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2024-12-18 19:14:57 +0100] [36244] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2024-12-18 19:14:57 +0100] [36244] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2024-12-18 19:14:58 +0100] [36244] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2024-12-22 16:57:41 +0100] [36084] [INFO] Handling signal: hup
+[2024-12-22 16:57:41 +0100] [36084] [INFO] Hang up: Master
+[2024-12-22 16:57:41 +0100] [36084] [ERROR] Worker (pid:36086) was sent SIGHUP!
+[2024-12-22 16:57:41 +0100] [36084] [ERROR] Worker (pid:36085) was sent SIGHUP!
+[2024-12-22 16:57:41 +0100] [36084] [ERROR] Worker (pid:36087) was sent SIGHUP!
+[2024-12-22 16:57:41 +0100] [36084] [ERROR] Worker (pid:36088) was sent SIGHUP!
+[2024-12-22 16:57:41 +0100] [151643] [INFO] Booting worker with pid: 151643
+[2024-12-22 16:57:41 +0100] [151644] [INFO] Booting worker with pid: 151644
+[2024-12-22 16:57:41 +0100] [151645] [INFO] Booting worker with pid: 151645
+[2024-12-22 16:57:41 +0100] [151646] [INFO] Booting worker with pid: 151646
