@@ -13,14 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Get list of changed files
-        id: changes
-        run: |
-          git fetch origin main
-          git diff --name-only HEAD^ HEAD > changed_files.txt
-          cat changed_files.txt
-
-      - name: Deploy only changed files
+      - name: Deploy to VM
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           VM_HOST: "157.159.195.26"
@@ -29,13 +22,5 @@ jobs:
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          
-          # Préparer les fichiers modifiés pour l'envoi
-          while read -r file; do
-            if [ -f "$file" ]; then
-              # Créer les dossiers nécessaires sur le serveur distant
-              ssh -o StrictHostKeyChecking=no $VM_USER@$VM_HOST "mkdir -p /var/www/html/SiteBDA/$(dirname $file)"
-              # Envoyer les fichiers modifiés
-              scp -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no "$file" $VM_USER@$VM_HOST:/var/www/html/SiteBDA/"$file"
-            fi
-          done < changed_files.txt
+          ssh -o StrictHostKeyChecking=no $VM_USER@$VM_HOST "mkdir -p /var/www/html/SiteBDA"
+          scp -r ./* $VM_USER@$VM_HOST:/var/www/html/SiteBDA
