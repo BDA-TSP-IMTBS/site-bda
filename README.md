@@ -18,7 +18,7 @@ vérifier s'il existe un fichier du type ```id_rsa.pub``` (comme id_ed24419.pub)
 
 ### 2. Ajouter votre clé publique sur le site hosting
 
-Une fois copiée, aller sur [hosting.minet.net](hosting.minet.net), connectez-vous au compte du BDA, sélectionner la vm, cliquez sur "changer mes identifiants" et coller votre clé punlique. Pour le nom d'utilisateur et le mdp, c'est ceux du BDA. 
+Une fois copiée, aller sur [hosting.minet.net](hosting.minet.net), connectez-vous au compte du BDA, sélectionner la vm, cliquez sur "changer mes identifiants" et coller votre clé publique. Pour le nom d'utilisateur et le mdp, c'est ceux du BDA. 
 
 # Ajouter le navbar et le footer 
 Ajoutez ceci :
