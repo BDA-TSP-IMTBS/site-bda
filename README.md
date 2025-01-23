@@ -85,9 +85,9 @@ Pou faire simple, voici un template à copier coller à la création de toute no
     <-- inserer le code principal ici -->
 
     <div id="footer-container"></div>
-    <script src="/include-navbar.js"></script> <!-- Inclusion du fichier JavaScript -->
-    <script src="/animations.js"></script> <!-- Inclusion du fichier JavaScript pour les animations -->
-    <script src="/include-footer.js"></script> <!-- Inclusion du fichier JavaScript -->
+    <script src="/include-navbar.js"></script> <!-- Inclusion du navbar -->
+    <script src="/animations.js"></script> <!-- Inclusion du fichier JavaScript -->
+    <script src="/include-footer.js"></script> <!-- Inclusion du footer -->
     <script src="/script-navbar-footer.js"></script>
 </body>
 </html>
