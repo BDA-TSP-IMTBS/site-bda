@@ -26,7 +26,80 @@ Ajoutez ceci :
     <script src="/include-navbar.js"></script> <!-- Inclusion du fichier JavaScript -->
     <script src="/include-footer.js"></script> <!-- Inclusion du fichier JavaScript -->
     <script src="/script-navbar-footer.js"></script>
+    <link rel="stylesheet" href="/styles-navbar-footer.css" />
   ````
-Les fichiers include-navbar.js et include-footer.js permettent d'inclure le nacbar et fopter sans avoir à copier 
+Les fichiers include-navbar.js et include-footer.js permettent d'inclure le navbar et footer sans avoir à copier 
+Les fichiers script-navbar-footer.js et styles-navbar-footer.css sont les fichiers js et css des navbar et footer.
 
+Ensuite, pour mettre le footer on met un div avec un id particulier qu'on a mis dans le fichier include-footer.js, on ajoute donc cette ligne à la toute fin (juste avant </body>:
+````
+<div id="footer-container"></div>
+````
+Idem pour le navbar, on ajoute ça dans au début de body: 
+````
+<div id="navbar-container"></div>
+````
+
+# Ajouter les balises de Foogle Analytics 
+Google Analytics permet d'observer le nombre de personnes ayant visité le site, quelles pages ils ont visités, où ont-ils cliqué, etc. C'est assez complet, bref c'est que pour les stats. Pour pouvoir récupérer les stats d'une page, on ajoute ça dans le <head> : 
+````
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BS8M7EH78B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BS8M7EH78B');
+    </script>
+````
+
+# Template à copier 
+Pou faire simple, voici un template à copier coller à la création de toute nouvelle page : 
+````
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BS8M7EH78B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BS8M7EH78B');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles-navbar-footer.css" />
+    <link rel="icon" href="images/Tache_BDA.png" type="image/x-icon">
+    <title>BDA</title>
+</head>
+<body>
+    <div id="navbar-container"></div> <!-- L'élément pour inclure la navbar -->
+
+    <-- inserer le code principal ici -->
+
+    <div id="footer-container"></div>
+    <script src="/include-navbar.js"></script> <!-- Inclusion du fichier JavaScript -->
+    <script src="/animations.js"></script> <!-- Inclusion du fichier JavaScript pour les animations -->
+    <script src="/include-footer.js"></script> <!-- Inclusion du fichier JavaScript -->
+    <script src="/script-navbar-footer.js"></script>
+</body>
+</html>
+
+
+
+<script>
+    const scrollingWrapper = document.getElementById('scrolling-wrapper');
+    scrollingWrapper.addEventListener('wheel', (evt) => {
+        evt.preventDefault();
+        scrollingWrapper.scrollLeft += evt.deltaY;
+    });
+</script>
+````
 
