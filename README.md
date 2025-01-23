@@ -40,7 +40,7 @@ Idem pour le navbar, on ajoute ça dans au début de body:
 <div id="navbar-container"></div>
 ````
 
-# Ajouter les balises de Foogle Analytics 
+# Ajouter les balises de Google Analytics 
 Google Analytics permet d'observer le nombre de personnes ayant visité le site, quelles pages ils ont visités, où ont-ils cliqué, etc. C'est assez complet, bref c'est que pour les stats. Pour pouvoir récupérer les stats d'une page, on ajoute ça dans le <head> : 
 ````
     <!-- Google tag (gtag.js) -->
@@ -91,15 +91,5 @@ Pou faire simple, voici un template à copier coller à la création de toute no
     <script src="/script-navbar-footer.js"></script>
 </body>
 </html>
-
-
-
-<script>
-    const scrollingWrapper = document.getElementById('scrolling-wrapper');
-    scrollingWrapper.addEventListener('wheel', (evt) => {
-        evt.preventDefault();
-        scrollingWrapper.scrollLeft += evt.deltaY;
-    });
-</script>
 ````
 
