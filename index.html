@@ -40,8 +40,8 @@
                 <p>Découvrez les dernières actualités et événements à venir du BDA et des ses clubs dans cette section !</p>
             </div>
         </div>
-        <div id="scrolling-wrapper" class="scrolling-wrapper">
-            <!--<div class="card" style="background-image: url('news/bda.jpg');">
+        <!--<div id="scrolling-wrapper" class="scrolling-wrapper">
+            <div class="card" style="background-image: url('news/bda.jpg');">
                 <div class="card-content">
                     <h2>Stand BDA</h2>
                     <p>Venez découvrir le BDA sur nos stands du lundi 26 août au dimanche 1 septembre de 10h à 18h en <a href="https://promo2tel.fr/campus.html">grande salle</a> au foyer </p>
@@ -146,7 +146,7 @@
                     <p>Vous voulez être plus actifs au BDA, être des membres "privilégiés" au BDA ? Vous envisagez de faire partie du prochain mandat BDA ? Alors RDV mardi 8 octobre pour l'INTRONISATION BDA à 21h en salle J004! Il y aura plein d'activités diverses et variées ! </p>
                     <a href="/qui-sommes-nous/presentationbda" class="more-info-button">En savoir plus</a>
                 </div>
-            </div>
+            </div>-->
         </div>-->
         <div class="calendar">
             <h2>Envie d'être au courant de tous les événements du BDA ?</h2>
@@ -200,19 +200,9 @@
     </section>
 
     <div id="footer-container"></div>
-    <script src="/include-navbar.js"></script> <!-- Inclusion du fichier JavaScript -->
-    <script src="/animations.js"></script> <!-- Inclusion du fichier JavaScript pour les animations -->
-    <script src="/include-footer.js"></script> <!-- Inclusion du fichier JavaScript -->
+    <script src="/include-navbar.js"></script> <!-- Inclusion du navbar -->
+    <script src="/animations.js"></script> <!-- Inclusion du fichier JavaScript -->
+    <script src="/include-footer.js"></script> <!-- Inclusion du footer -->
     <script src="/script-navbar-footer.js"></script>
 </body>
 </html>
-
-
-
-<script>
-    const scrollingWrapper = document.getElementById('scrolling-wrapper');
-    scrollingWrapper.addEventListener('wheel', (evt) => {
-        evt.preventDefault();
-        scrollingWrapper.scrollLeft += evt.deltaY;
-    });
-</script>
