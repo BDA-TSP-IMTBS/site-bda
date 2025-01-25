@@ -1,28 +1,32 @@
 # Présentation 
-Ceci est le git du site du BDA de Télécom sudParis et IMTBS développé par le mandat Artefact 2024-2025. 
+Ceci est le dépôt Git du **site du BDA de Télécom SudParis et IMT-BS**, développé par le mandat **Artefact 2024-2025**.
 
-Ce site est accessible sur [bda-imtbs-tsp.fr](bda-imtbs-tsp.fr).
+Le site est accessible à l'adresse : [bda-imtbs-tsp.fr](http://bda-imtbs-tsp.fr).
 
-Il a été développé en HTMLL, CSS et JS sans framework en particulier. Il contient : 
-- une page principale avec une partie actualités qui contient les actualités du BDA et ses clubs
-- une page présentation du BDA qui inclut une présentation du BDA
-- une page l'équipe qui inclus le présnetaion du mandat
-- une page Clubs qui inclut une présentation de tous les clubs puis une page par club qui inclus description, organigramme, photos d'events, phrase du prez, contacts et réseaux sociaux
-- une page events qui inclut la présentation des événements du BDA. puis une page par événemnt (elles n'ont pas toutes été faites)
-- une page cotiser qui inclut les infos pour cotiser ainsi que les pris et un lien vers un helloasso permettant de cotiser
-- une page jouer! qui inclut un jeu qui a été fait par le CELL (merci Valentin Lantigny) pour l'intronisation 
-- une page partenariats qui explique comment devneir partenaire et contient les logos des partenaires atuels
-- une page nous contacter qui contient un formulaire de contact fait en php 
-- /!\ ATTENTION : le formulaire de contact ne fonctionne pas, ce n'était pas la priorité donc je l'ai laissé tel quel mais faudra le modifier
+Ce site a été développé en **HTML, CSS et JavaScript**, sans framework particulier. Il inclut :  
+- Une **page principale** avec une section actualités, qui contient les actualités du BDA et de ses clubs.  
+- Une **page présentation du BDA** qui offre une description générale de l'association.  
+- Une **page équipe** qui présente le mandat actuel.  
+- Une **page clubs**, qui donne un aperçu de tous les clubs du BDA, avec une sous-page par club contenant :
+  - Une description,  
+  - Un organigramme,  
+  - Des photos d'événements,  
+  - Une phrase du président du club,  
+  - Les contacts et réseaux sociaux.  
+- Une **page événements** présentant les événements organisés par le BDA, avec une sous-page par événement (en cours de réalisation).  
+- Une **page cotiser**, avec les informations nécessaires pour adhérer, les prix et un lien vers HelloAsso pour effectuer le paiement.  
+- Une **page jouer !** incluant un jeu développé par le CELL (merci à Valentin Lantigny) pour l'intronisation.  
+- Une **page partenariats**, expliquant comment devenir partenaire et affichant les logos des partenaires actuels.  
+- Une **page nous contacter**, contenant un formulaire de contact en PHP.  
+  ⚠️ **Attention** : le formulaire de contact ne fonctionne pas pour l’instant. Il devra être corrigé ultérieurement.
 
-### A faire : 
-- Réparer la page contact
-- Ajouter le calendrier hebdomadaire des clubs sur le site du BDA
-- ajouter une API gsheet pour ne pas avoir à actualiser le site toutes les semaines
-- ajouter des pages pour les événements
-- ajouter une page dons où les gens pourront faire un don pour le BDA
-- ajouter un jeu "Quel Arefact es-tu ?" il sera fait pendant la campagne normalement
-- 
+### À faire
+- Réparer le formulaire de contact sur la page "Nous contacter".  
+- Ajouter un calendrier hebdomadaire des activités des clubs.  
+- Intégrer une API Google Sheets pour automatiser les mises à jour des actualités sans avoir à modifier le site manuellement chaque semaine.  
+- Compléter les pages dédiées aux événements.  
+- Ajouter une page "Dons" pour permettre aux utilisateurs de contribuer financièrement au BDA.  
+- Créer un jeu "Quel Artefact es-tu ?", prévu pendant la campagne.
 
 # Se Connecter à la vm MiNET en SSH 
 ### 1. Vérifier si vous avez déjà une clé publique: 
