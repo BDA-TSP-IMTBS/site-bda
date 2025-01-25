@@ -1,3 +1,9 @@
+# Présentation 
+Ceci est le git du site du BDA de Télécom sudParis et IMTBS développé par le mandat Artefact 2024-2025. 
+Ce site est accessible sur [bda-imtbs-tsp.fr](bda-imtbs-tsp.fr).
+
+
+
 # Se Connecter à la vm MiNET en SSH 
 ### 1. Vérifier si vous avez déjà une clé publique: 
 
@@ -103,4 +109,7 @@ tree --prune -I 'api'
 
 Pour les erreurs, j'ai juste codé la page erreur 404, vous pourrez en faire d'autre :)
 
-# 
+# Crédit
+Développé par : Ithar Kazem
+Illustrations : Ithar Kazem, sur Procreate
+Photos : Déclic Club photo 
