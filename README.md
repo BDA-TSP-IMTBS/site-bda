@@ -111,5 +111,7 @@ Pour les erreurs, j'ai juste codé la page erreur 404, vous pourrez en faire d'a
 
 # Crédit
 Développé par : Ithar Kazem
+
 Illustrations : Ithar Kazem, sur Procreate
+
 Photos : Déclic Club photo 
