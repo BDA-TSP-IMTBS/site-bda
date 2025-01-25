@@ -1,8 +1,28 @@
 # Présentation 
 Ceci est le git du site du BDA de Télécom sudParis et IMTBS développé par le mandat Artefact 2024-2025. 
+
 Ce site est accessible sur [bda-imtbs-tsp.fr](bda-imtbs-tsp.fr).
 
+Il a été développé en HTMLL, CSS et JS sans framework en particulier. Il contient : 
+- une page principale avec une partie actualités qui contient les actualités du BDA et ses clubs
+- une page présentation du BDA qui inclut une présentation du BDA
+- une page l'équipe qui inclus le présnetaion du mandat
+- une page Clubs qui inclut une présentation de tous les clubs puis une page par club qui inclus description, organigramme, photos d'events, phrase du prez, contacts et réseaux sociaux
+- une page events qui inclut la présentation des événements du BDA. puis une page par événemnt (elles n'ont pas toutes été faites)
+- une page cotiser qui inclut les infos pour cotiser ainsi que les pris et un lien vers un helloasso permettant de cotiser
+- une page jouer! qui inclut un jeu qui a été fait par le CELL (merci Valentin Lantigny) pour l'intronisation 
+- une page partenariats qui explique comment devneir partenaire et contient les logos des partenaires atuels
+- une page nous contacter qui contient un formulaire de contact fait en php 
+- /!\ ATTENTION : le formulaire de contact ne fonctionne pas, ce n'était pas la priorité donc je l'ai laissé tel quel mais faudra le modifier
 
+### A faire : 
+- Réparer la page contact
+- Ajouter le calendrier hebdomadaire des clubs sur le site du BDA
+- ajouter une API gsheet pour ne pas avoir à actualiser le site toutes les semaines
+- ajouter des pages pour les événements
+- ajouter une page dons où les gens pourront faire un don pour le BDA
+- ajouter un jeu "Quel Arefact es-tu ?" il sera fait pendant la campagne normalement
+- 
 
 # Se Connecter à la vm MiNET en SSH 
 ### 1. Vérifier si vous avez déjà une clé publique: 
@@ -111,6 +131,8 @@ Pour les erreurs, j'ai juste codé la page erreur 404, vous pourrez en faire d'a
 
 # &copy; Crédit
 Développé par : Ithar Kazem
+
+Jeu : Valentin Lantigny
 
 Illustrations : Ithar Kazem, sur Procreate
 
