@@ -1,7 +1,7 @@
 # Sommaire
 
 1. [Présentation](#présentation)  
-2. [À faire](#à-faire)  
+2. [À faire](###à-faire)  
 3. [Se connecter à la VM MiNET en SSH](#se-connecter-à-la-vm-minet-en-ssh)  
    - [Vérifiez si vous avez déjà une clé publique](#1-vérifiez-si-vous-avez-déjà-une-clé-publique)  
    - [Ajoutez votre clé publique sur le site MiNET](#2-ajoutez-votre-clé-publique-sur-le-site-minet)  
@@ -62,7 +62,7 @@ vérifier s'il existe un fichier du type ```id_rsa.pub``` (comme id_ed24419.pub)
 
 Une fois copiée, aller sur [hosting.minet.net](hosting.minet.net), connectez-vous au compte du BDA, sélectionner la vm, cliquez sur "changer mes identifiants" et coller votre clé publique. Pour le nom d'utilisateur et le mdp, c'est ceux du BDA. 
 
-# Hébérgement du site sur la vm 
+# Hébergement du site sur la vm 
 
 J'utilse nginx pour faie l'hébéregement. Normalement tout est déjà fait sur la vm donc vous n'aurez rien à modifier 
 
@@ -86,7 +86,7 @@ Idem pour le navbar, on ajoute ça dans au début de body:
 <div id="navbar-container"></div>
 ````
 
-# Ajouter les balises de Google Analytics 
+# Ajouter les balises Google Analytics 
 Google Analytics permet d'observer le nombre de personnes ayant visité le site, quelles pages ils ont visités, où ont-ils cliqué, etc. C'est assez complet, bref c'est que pour les stats. Pour pouvoir récupérer les stats d'une page, on ajoute ça dans le <head> : 
 ````
     <!-- Google tag (gtag.js) -->
@@ -100,7 +100,7 @@ Google Analytics permet d'observer le nombre de personnes ayant visité le site,
     </script>
 ````
 
-# Template à copier 
+# Template pour une nouvelle page
 Pou faire simple, voici un template à copier coller à la création de toute nouvelle page : 
 ````
 <!DOCTYPE html>
