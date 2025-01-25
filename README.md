@@ -101,6 +101,6 @@ pou voir et comprendre la structure du code, je vous conseille de lancer cette c
 tree --prune -I 'api'
 ````
 
-Pour les erreurs, j'ai jsute coddé la page erreur 404, vous pourrez en faire d'autre :)
+Pour les erreurs, j'ai jsute codé la page erreur 404, vous pourrez en faire d'autre :)
 
-
+# 
