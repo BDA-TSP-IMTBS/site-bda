@@ -109,7 +109,7 @@ tree --prune -I 'api'
 
 Pour les erreurs, j'ai juste codé la page erreur 404, vous pourrez en faire d'autre :)
 
-# Crédit
+# &copy Crédit
 Développé par : Ithar Kazem
 
 Illustrations : Ithar Kazem, sur Procreate
