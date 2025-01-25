@@ -3,12 +3,13 @@
 1. [Présentation](#présentation)  
 2. [À faire](#à-faire)  
 3. [Se connecter à la VM MiNET en SSH](#se-connecter-à-la-vm-minet-en-ssh)  
-4. [Hébergement du site sur la VM](#hébergement-du-site-sur-la-vm)  
-5. [Ajouter le navbar et le footer](#ajouter-le-navbar-et-le-footer)  
-6. [Ajouter les balises Google Analytics](#ajouter-les-balises-google-analytics)  
-7. [Template pour une nouvelle page](#template-pour-une-nouvelle-page)
-8. [Structure du site](#structure-du-site)
-9. [&copy; Crédit](#&copy;crédit)
+4. [Hébergement du site sur la VM](#hébergement-du-site-sur-la-vm)
+5. [Installation](#installation)
+6. [Ajouter le navbar et le footer](#ajouter-le-navbar-et-le-footer)  
+7. [Ajouter les balises Google Analytics](#ajouter-les-balises-google-analytics)  
+8. [Template pour une nouvelle page](#template-pour-une-nouvelle-page)
+9. [Structure du site](#structure-du-site)
+10. [&copy; Crédit](#&copy;crédit)
 
 # Présentation 
 Ceci est le dépôt Git du **site du BDA de Télécom SudParis et IMT-BS**, développé par le mandat **Artefact 2024-2025**.
