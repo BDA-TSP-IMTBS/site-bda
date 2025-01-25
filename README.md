@@ -6,7 +6,9 @@
 4. [Hébergement du site sur la VM](#hébergement-du-site-sur-la-vm)  
 5. [Ajouter le navbar et le footer](#ajouter-le-navbar-et-le-footer)  
 6. [Ajouter les balises Google Analytics](#ajouter-les-balises-google-analytics)  
-7. [Template pour une nouvelle page](#template-pour-une-nouvelle-page)  
+7. [Template pour une nouvelle page](#template-pour-une-nouvelle-page)
+8. [Structure du site](#structure-du-site)
+9. [Crédits](#crédits)
 
 # Présentation 
 Ceci est le dépôt Git du **site du BDA de Télécom SudParis et IMT-BS**, développé par le mandat **Artefact 2024-2025**.
