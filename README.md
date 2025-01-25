@@ -9,7 +9,7 @@
 7. [Ajouter les balises Google Analytics](#ajouter-les-balises-google-analytics)  
 8. [Template pour une nouvelle page](#template-pour-une-nouvelle-page)
 9. [Structure du site](#structure-du-site)
-10. [&copy; Crédit](#&copy;crédit)
+10. [&copy; Crédit](#-crédit)
 
 # Présentation 
 Ceci est le dépôt Git du **site du BDA de Télécom SudParis et IMT-BS**, développé par le mandat **Artefact 2024-2025**.
@@ -99,6 +99,9 @@ Idem pour le navbar, on ajoute ça dans au début de body:
 ````
 <div id="navbar-container"></div>
 ````
+# Le ci-cd d
+Afin de pouvoir publier le site en ligne (scp sur la vm) en même temps que push sur le git, on fait ce qu'on appelle un ci-cd. Vous le trouverez dans ```.github/workflows/ci-cd.yaml```
+
 
 # Ajouter les balises Google Analytics 
 Google Analytics permet d'observer le nombre de personnes ayant visité le site, quelles pages ils ont visités, où ont-ils cliqué, etc. C'est assez complet, bref c'est que pour les stats. Pour pouvoir récupérer les stats d'une page, on ajoute ça dans le <head> : 
@@ -167,6 +170,8 @@ Pour les erreurs, j'ai juste codé la page erreur 404, vous pourrez en faire d'a
 Développement : Ithar Kazem
 
 Jeu : Valentin Lantigny
+
+Page événements : suivre ce [tuto](https://youtu.be/j7GG009J9uc?si=W13s3sCXf4YXV1AA)
 
 Illustrations : Ithar Kazem (réalisées sur Procreate)
 
