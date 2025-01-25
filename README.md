@@ -8,7 +8,7 @@
 6. [Ajouter les balises Google Analytics](#ajouter-les-balises-google-analytics)  
 7. [Template pour une nouvelle page](#template-pour-une-nouvelle-page)
 8. [Structure du site](#structure-du-site)
-9. [Crédits](#crédits)
+9. [Crédit](#crédit)
 
 # Présentation 
 Ceci est le dépôt Git du **site du BDA de Télécom SudParis et IMT-BS**, développé par le mandat **Artefact 2024-2025**.
@@ -150,10 +150,10 @@ tree --prune -I 'api'
 Pour les erreurs, j'ai juste codé la page erreur 404, vous pourrez en faire d'autre :)
 
 # &copy; Crédit
-Développé par : Ithar Kazem
+Développement : Ithar Kazem
 
 Jeu : Valentin Lantigny
 
-Illustrations : Ithar Kazem, sur Procreate
+Illustrations : Ithar Kazem (réalisées sur Procreate)
 
-Photos : Déclic Club photo 
+Photos : Déclic Club Photo
