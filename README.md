@@ -93,3 +93,14 @@ Pou faire simple, voici un template à copier coller à la création de toute no
 </html>
 ````
 
+# Structure du site 
+Le site est configuré pour que les .html et les index.html ne se voient pas dans le lien. Sinon, pour chaque page, il existe normalement un dossier au nom de la page à l'intérieur duquel il y a un fichier index.html et styles.css
+pou voir et comprendre la structure du code, je vous conseille de lancer cette commande : 
+
+````
+tree --prune -I 'api'
+````
+
+Pour les erreurs, j'ai jsute coddé la page erreur 404, vous pourrez en faire d'autre :)
+
+
