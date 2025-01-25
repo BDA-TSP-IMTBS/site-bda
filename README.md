@@ -62,6 +62,19 @@ vérifier s'il existe un fichier du type ```id_rsa.pub``` (comme id_ed24419.pub)
 
 Une fois copiée, aller sur [hosting.minet.net](hosting.minet.net), connectez-vous au compte du BDA, sélectionner la vm, cliquez sur "changer mes identifiants" et coller votre clé publique. Pour le nom d'utilisateur et le mdp, c'est ceux du BDA. 
 
+# Installation 
+Clonez le git, puis commencez. Ensuite pour déployer sur le site, deux  choix : 
+- Commit et push sur le git, il y a un ci-cd qui fait directement le déploiement sur le site. 
+- Faire un scp, copier les fichiers en local sur la vm de BDA:
+
+````
+scp -r /home/ithar/SiteBDA/*   associationbda@157.159.195.26:/var/www/html/SiteBDA/
+````
+Modifier la première partie ```/home/ithar/SiteBDA``` en fonction de là où vous avez clonez votre projet. Vous pouvez ne pas tout copier (c'est mieux), ne copiez que les fichiers que vous avez modifié, par exemple, si vous avez modifié ```nous-contacter/index.html```, écrivez : 
+````
+scp -r /home/ithar/SiteBDA/nous-contacter/index.html   associationbda@157.159.195.26:/var/www/html/SiteBDA/nous-contacter
+````
+
 # Hébergement du site sur la vm 
 
 J'utilse nginx pour faie l'hébéregement. Normalement tout est déjà fait sur la vm donc vous n'aurez rien à modifier 
