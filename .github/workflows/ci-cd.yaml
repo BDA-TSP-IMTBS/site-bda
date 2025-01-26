@@ -23,4 +23,4 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh -o StrictHostKeyChecking=no $VM_USER@$VM_HOST "mkdir -p /var/www/html/SiteBDA"
-          scp -r ./* $VM_USER@$VM_HOST:/var/www/html/SiteBDA
+          rsync -avz --delete --exclude '.git/' -e "ssh -o StrictHostKeyChecking=no" ./ $VM_USER@$VM_HOST:/var/www/html/SiteBDA

@@ -1,28 +1,45 @@
+# Sommaire
+
+1. [Présentation](#présentation)  
+2. [À faire](#à-faire)  
+3. [Se connecter à la VM MiNET en SSH](#se-connecter-à-la-vm-minet-en-ssh)  
+4. [Hébergement du site sur la VM](#hébergement-du-site-sur-la-vm)
+5. [Installation](#installation)
+6. [Ajouter le navbar et le footer](#ajouter-le-navbar-et-le-footer)  
+7. [Ajouter les balises Google Analytics](#ajouter-les-balises-google-analytics)  
+8. [Template pour une nouvelle page](#template-pour-une-nouvelle-page)
+9. [Structure du site](#structure-du-site)
+10. [&copy; Crédit](#-crédit)
+
 # Présentation 
-Ceci est le git du site du BDA de Télécom sudParis et IMTBS développé par le mandat Artefact 2024-2025. 
+Ceci est le dépôt Git du **site du BDA de Télécom SudParis et IMT-BS**, développé par le mandat **Artefact 2024-2025**.
 
-Ce site est accessible sur [bda-imtbs-tsp.fr](bda-imtbs-tsp.fr).
+Le site est accessible à l'adresse : [bda-imtbs-tsp.fr](http://bda-imtbs-tsp.fr).
 
-Il a été développé en HTMLL, CSS et JS sans framework en particulier. Il contient : 
-- une page principale avec une partie actualités qui contient les actualités du BDA et ses clubs
-- une page présentation du BDA qui inclut une présentation du BDA
-- une page l'équipe qui inclus le présnetaion du mandat
-- une page Clubs qui inclut une présentation de tous les clubs puis une page par club qui inclus description, organigramme, photos d'events, phrase du prez, contacts et réseaux sociaux
-- une page events qui inclut la présentation des événements du BDA. puis une page par événemnt (elles n'ont pas toutes été faites)
-- une page cotiser qui inclut les infos pour cotiser ainsi que les pris et un lien vers un helloasso permettant de cotiser
-- une page jouer! qui inclut un jeu qui a été fait par le CELL (merci Valentin Lantigny) pour l'intronisation 
-- une page partenariats qui explique comment devneir partenaire et contient les logos des partenaires atuels
-- une page nous contacter qui contient un formulaire de contact fait en php 
-- /!\ ATTENTION : le formulaire de contact ne fonctionne pas, ce n'était pas la priorité donc je l'ai laissé tel quel mais faudra le modifier
+Ce site a été développé en **HTML, CSS et JavaScript**, sans framework particulier. Il inclut :  
+- Une **page principale** avec une section actualités, qui contient les actualités du BDA et de ses clubs.  
+- Une **page présentation du BDA** qui offre une description générale de l'association.  
+- Une **page équipe** qui présente le mandat actuel.  
+- Une **page clubs**, qui donne un aperçu de tous les clubs du BDA, avec une sous-page par club contenant :
+  - Une description,  
+  - Un organigramme,  
+  - Des photos d'événements,  
+  - Une phrase du président du club,  
+  - Les contacts et réseaux sociaux.  
+- Une **page événements** présentant les événements organisés par le BDA, avec une sous-page par événement (en cours de réalisation).  
+- Une **page cotiser**, avec les informations nécessaires pour adhérer, les prix et un lien vers HelloAsso pour effectuer le paiement.  
+- Une **page jouer !** incluant un jeu développé par le CELL (merci à Valentin Lantigny) pour l'intronisation.  
+- Une **page partenariats**, expliquant comment devenir partenaire et affichant les logos des partenaires actuels.  
+- Une **page nous contacter**, contenant un formulaire de contact en PHP.  
+  ⚠️ **Attention** : le formulaire de contact ne fonctionne pas pour l’instant. Il devra être corrigé ultérieurement.
 
-### A faire : 
-- Réparer la page contact
-- Ajouter le calendrier hebdomadaire des clubs sur le site du BDA
-- ajouter une API gsheet pour ne pas avoir à actualiser le site toutes les semaines
-- ajouter des pages pour les événements
-- ajouter une page dons où les gens pourront faire un don pour le BDA
-- ajouter un jeu "Quel Arefact es-tu ?" il sera fait pendant la campagne normalement
-- 
+### À faire
+- Réparer le formulaire de contact sur la page "Nous contacter".  
+- Ajouter un calendrier hebdomadaire des activités des clubs.  
+- Intégrer une API Google Sheets pour automatiser les mises à jour des actualités sans avoir à modifier le site manuellement chaque semaine.  
+- Compléter les pages dédiées aux événements.  
+- Ajouter une page "Dons" pour permettre aux utilisateurs de contribuer financièrement au BDA.  
+- Créer un jeu "Quel Artefact es-tu ?", prévu pendant la campagne.
 
 # Se Connecter à la vm MiNET en SSH 
 ### 1. Vérifier si vous avez déjà une clé publique: 
@@ -46,7 +63,20 @@ vérifier s'il existe un fichier du type ```id_rsa.pub``` (comme id_ed24419.pub)
 
 Une fois copiée, aller sur [hosting.minet.net](hosting.minet.net), connectez-vous au compte du BDA, sélectionner la vm, cliquez sur "changer mes identifiants" et coller votre clé publique. Pour le nom d'utilisateur et le mdp, c'est ceux du BDA. 
 
-# Hébérgement du site sur la vm 
+# Installation 
+Clonez le git, puis commencez. Ensuite pour déployer sur le site, deux  choix : 
+- Commit et push sur le git, il y a un ci-cd qui fait directement le déploiement sur le site. 
+- Faire un scp, copier les fichiers en local sur la vm de BDA:
+
+````
+scp -r /home/ithar/SiteBDA/*   associationbda@157.159.195.26:/var/www/html/SiteBDA/
+````
+Modifier la première partie ```/home/ithar/SiteBDA``` en fonction de là où vous avez clonez votre projet. Vous pouvez ne pas tout copier (c'est mieux), ne copiez que les fichiers que vous avez modifié, par exemple, si vous avez modifié ```nous-contacter/index.html```, écrivez : 
+````
+scp -r /home/ithar/SiteBDA/nous-contacter/index.html   associationbda@157.159.195.26:/var/www/html/SiteBDA/nous-contacter
+````
+
+# Hébergement du site sur la vm 
 
 J'utilse nginx pour faie l'hébéregement. Normalement tout est déjà fait sur la vm donc vous n'aurez rien à modifier 
 
@@ -69,8 +99,11 @@ Idem pour le navbar, on ajoute ça dans au début de body:
 ````
 <div id="navbar-container"></div>
 ````
+# Le ci-cd d
+Afin de pouvoir publier le site en ligne (scp sur la vm) en même temps que push sur le git, on fait ce qu'on appelle un ci-cd. Vous le trouverez dans ```.github/workflows/ci-cd.yaml```
 
-# Ajouter les balises de Google Analytics 
+
+# Ajouter les balises Google Analytics 
 Google Analytics permet d'observer le nombre de personnes ayant visité le site, quelles pages ils ont visités, où ont-ils cliqué, etc. C'est assez complet, bref c'est que pour les stats. Pour pouvoir récupérer les stats d'une page, on ajoute ça dans le <head> : 
 ````
     <!-- Google tag (gtag.js) -->
@@ -84,7 +117,7 @@ Google Analytics permet d'observer le nombre de personnes ayant visité le site,
     </script>
 ````
 
-# Template à copier 
+# Template pour une nouvelle page
 Pou faire simple, voici un template à copier coller à la création de toute nouvelle page : 
 ````
 <!DOCTYPE html>
@@ -134,10 +167,12 @@ tree --prune -I 'api'
 Pour les erreurs, j'ai juste codé la page erreur 404, vous pourrez en faire d'autre :)
 
 # &copy; Crédit
-Développé par : Ithar Kazem
+Développement : Ithar Kazem
 
 Jeu : Valentin Lantigny
 
-Illustrations : Ithar Kazem, sur Procreate
+Page événements : suivre ce [tuto](https://youtu.be/j7GG009J9uc?si=W13s3sCXf4YXV1AA)
 
-Photos : Déclic Club photo 
+Illustrations : Ithar Kazem (réalisées sur Procreate)
+
+Photos : Déclic Club Photo
