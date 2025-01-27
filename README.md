@@ -99,7 +99,7 @@ Idem pour le navbar, on ajoute ça dans au début de body:
 ````
 <div id="navbar-container"></div>
 ````
-# Le ci-cd d
+# Le ci-cd
 Afin de pouvoir publier le site en ligne (scp sur la vm) en même temps que push sur le git, on fait ce qu'on appelle un ci-cd. Vous le trouverez dans ```.github/workflows/ci-cd.yaml```
 
 
