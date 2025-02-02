@@ -173,6 +173,8 @@ Jeu : Valentin Lantigny
 
 Page événements : suivre ce [tuto](https://youtu.be/j7GG009J9uc?si=W13s3sCXf4YXV1AA)
 
+Page Clubs : c'est aussi un tuto youtube mais je le retrouve plus
+
 Illustrations : Ithar Kazem (réalisées sur Procreate)
 
 Photos : Déclic Club Photo
