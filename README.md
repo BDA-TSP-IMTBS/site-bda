@@ -40,6 +40,7 @@ Ce site a été développé en **HTML, CSS et JavaScript**, sans framework parti
 - Compléter les pages dédiées aux événements.  
 - Ajouter une page "Dons" pour permettre aux utilisateurs de contribuer financièrement au BDA.  
 - Créer un jeu "Quel Artefact es-tu ?", prévu pendant la campagne.
+- Traduire le site en anglais (déjà commencé)
 
 # Se Connecter à la vm MiNET en SSH 
 ### 1. Vérifier si vous avez déjà une clé publique: 
